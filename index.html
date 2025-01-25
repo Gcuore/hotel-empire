@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Empire</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="start-menu">
+    <h1>Hotel Empire</h1>
+    <p>Build and manage your own luxury hotel empire!</p>
+    <button id="start-game">Start Game</button>
+    <div class="hotel-preview">
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="door"></div>
+    </div>
+  </div>
+
+  <div id="game" style="display: none">
+    <div id="hotel"></div>
+    
+    <div id="ui">
+      <div id="level-container">
+        <div>Level: <span id="level">1</span></div>
+        <div id="experience-bar"><div id="experience"></div></div>
+      </div>
+      
+      <div id="stats">
+        <div>Money: $<span id="money">1000</span></div>
+        <div>Guests: <span id="guests">0</span>/<span id="capacity">5</span></div>
+        <div>Rating: <span id="rating">⭐⭐⭐</span></div>
+      </div>
+      
+      <div>Amenities: <span id="amenities">None</span></div>
+      
+      <div id="controls">
+        <button id="build-room">Build Room ($200)</button>
+        <button id="upgrade">Upgrade Hotel ($500)</button>
+        <button id="hire-staff">Hire Staff ($300)</button>
+      </div>
+
+      <div id="locked-features">Unlock more features at level 4</div>
+
+      <div id="advanced-controls" style="display: none">
+        <button id="marketing">Marketing (Level <span id="marketing-level">1</span>)</button>
+        <button id="cleaning">Cleaning (Level <span id="cleaning-level">1</span>)</button>
+      </div>
+
+      <div id="amenities-controls" style="display: none">
+        <button id="add-pool">Add Pool ($2000)</button>
+        <button id="add-restaurant">Add Restaurant ($3000)</button>
+        <button id="add-gym">Add Gym ($1500)</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
